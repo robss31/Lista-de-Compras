@@ -85,8 +85,8 @@ function ListaComp() {
 
 
                 <input id="inputconta" type="text" value={name} onChange={(e) => { setName(e.target.value) }} placeholder="  Nome do Produto" />
-                <input id="inputconta1" type="number" value={quantidade} onChange={(e) => { setQuantidade(e.target.value) }} placeholder=" Quantidade" />
-                <input id="inputconta2" type="number" value={valor} onChange={(e) => { setValor(e.target.value) }} placeholder="  Valor Unitário " />
+                <input id="inputconta1" type="number" value={quantidade} onChange={(e) => { setQuantidade(e.target.value) }} placeholder=" Quantidade (,)" />
+                <input id="inputconta2" type="number" value={valor} onChange={(e) => { setValor(e.target.value) }} placeholder="  Valor Unitário (,)" />
 
                 <button type="submit" id="btn1" onClick={handleSum}>add</button>
 
@@ -117,9 +117,7 @@ function ListaComp() {
                                 <button onClick={() => { deleta(index) }} className="deletar">deletar</button>
 
                             </div>
-
                         ))
-
                 }
 
             </div>
